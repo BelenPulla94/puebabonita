@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bonitaConnector="http://www.bonitasoft.org/studio/connector/definition/6.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di_1="http://www.omg.org/spec/DD/20100524/DI" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:model="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="schemaLocation http://www.omg.org/spec/BPMN/20100524/MODEL schemas/BPMN20.xsd" exporter="BonitaSoft" exporterVersion="7.13.0" expressionLanguage="http://groovy.apache.org/" targetNamespace="http://bonitasoft.com/_5ptoEINmEey__cZWJnWdkw">
+  <model:collaboration id="_5ptoEINmEey__cZWJnWdkw">
+    <model:participant id="_0WX88IRoEey__cZWJnWdkw" name="PS-01.01-PD-01 Entrada de Pedidos " processRef="_5ptoEYNmEey__cZWJnWdkw"/>
+    <model:participant id="_5ptoK4NmEey__cZWJnWdkw" name="Employee actor">
+      <model:documentation>Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME</model:documentation>
+    </model:participant>
+  </model:collaboration>
+  <model:process id="_5ptoEYNmEey__cZWJnWdkw" name="PS-01.01-PD-01 Entrada de Pedidos ">
+    <model:ioSpecification id="_0WX88YRoEey__cZWJnWdkw">
+      <model:inputSet id="_0WX88oRoEey__cZWJnWdkw"/>
+      <model:outputSet id="_0WX884RoEey__cZWJnWdkw"/>
+    </model:ioSpecification>
+    <model:laneSet id="ps-0101-pd-01-entrada-de-pedidos_laneSet">
+      <model:lane id="_5ptoEoNmEey__cZWJnWdkw" name="Cliente ">
+        <model:flowNodeRef>_5ptoE4NmEey__cZWJnWdkw</model:flowNodeRef>
+        <model:flowNodeRef>_5ptoF4NmEey__cZWJnWdkw</model:flowNodeRef>
+        <model:flowNodeRef>_kv4JMIRoEey__cZWJnWdkw</model:flowNodeRef>
+        <model:flowNodeRef>_lLEQYIRoEey__cZWJnWdkw</model:flowNodeRef>
+        <model:flowNodeRef>_nl-MkIRoEey__cZWJnWdkw</model:flowNodeRef>
+      </model:lane>
+      <model:lane id="_D8mNIINnEey__cZWJnWdkw" name="Ejecutivo "/>
+    </model:laneSet>
+    <model:startEvent id="_5ptoE4NmEey__cZWJnWdkw" name="Inicio1"/>
+    <model:userTask id="_5ptoF4NmEey__cZWJnWdkw" name="A01  Capturar Pedidos PEMEX"/>
+    <model:serviceTask id="_kv4JMIRoEey__cZWJnWdkw" name="Tarea1"/>
+    <model:endEvent id="_lLEQYIRoEey__cZWJnWdkw" name="Fin1"/>
+    <model:serviceTask id="_nl-MkIRoEey__cZWJnWdkw" name="Tarea2"/>
+    <model:sequenceFlow id="_5ptoKINmEey__cZWJnWdkw" name="" sourceRef="_5ptoE4NmEey__cZWJnWdkw" targetRef="_5ptoF4NmEey__cZWJnWdkw"/>
+    <model:sequenceFlow id="_kwnwEIRoEey__cZWJnWdkw" name="" sourceRef="_5ptoF4NmEey__cZWJnWdkw" targetRef="_kv4JMIRoEey__cZWJnWdkw"/>
+    <model:sequenceFlow id="_lLXLUIRoEey__cZWJnWdkw" name="" sourceRef="_kv4JMIRoEey__cZWJnWdkw" targetRef="_lLEQYIRoEey__cZWJnWdkw"/>
+    <model:sequenceFlow id="_nmH9k4RoEey__cZWJnWdkw" name="" sourceRef="_kv4JMIRoEey__cZWJnWdkw" targetRef="_nl-MkIRoEey__cZWJnWdkw"/>
+  </model:process>
+  <di:BPMNDiagram name="MiDiagrama">
+    <di:BPMNPlane id="plane__5ptoEINmEey__cZWJnWdkw" bpmnElement="_5ptoEINmEey__cZWJnWdkw">
+      <di:BPMNShape id="_5ptoRoNmEey__cZWJnWdkw" bpmnElement="_0WX88IRoEey__cZWJnWdkw" isHorizontal="true">
+        <dc:Bounds height="500.0" width="1320.0" x="0.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_5ptoSYNmEey__cZWJnWdkw" bpmnElement="_5ptoEoNmEey__cZWJnWdkw" isHorizontal="true">
+        <dc:Bounds height="250.0" width="1290.0" x="30.0" y="0.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_5ptoT4NmEey__cZWJnWdkw" bpmnElement="_5ptoE4NmEey__cZWJnWdkw">
+        <dc:Bounds height="30.0" width="30.0" x="92.0" y="90.0"/>
+        <di:BPMNLabel id="_0WX89YRoEey__cZWJnWdkw" labelStyle="_0WX89IRoEey__cZWJnWdkw">
+          <dc:Bounds height="17.0" width="51.0" x="82.0" y="125.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_5ptoTINmEey__cZWJnWdkw" bpmnElement="_5ptoF4NmEey__cZWJnWdkw">
+        <dc:Bounds height="73.0" width="146.0" x="164.0" y="60.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_kv4JOYRoEey__cZWJnWdkw" bpmnElement="_kv4JMIRoEey__cZWJnWdkw">
+        <dc:Bounds height="50.0" width="100.0" x="420.0" y="59.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_lLEQZIRoEey__cZWJnWdkw" bpmnElement="_lLEQYIRoEey__cZWJnWdkw">
+        <dc:Bounds height="30.0" width="30.0" x="610.0" y="79.0"/>
+        <di:BPMNLabel id="_0WX8-IRoEey__cZWJnWdkw" labelStyle="_0WX89IRoEey__cZWJnWdkw">
+          <dc:Bounds height="17.0" width="29.0" x="611.0" y="114.0"/>
+        </di:BPMNLabel>
+      </di:BPMNShape>
+      <di:BPMNShape id="_nmH9kIRoEey__cZWJnWdkw" bpmnElement="_nl-MkIRoEey__cZWJnWdkw">
+        <dc:Bounds height="50.0" width="100.0" x="459.0" y="170.0"/>
+      </di:BPMNShape>
+      <di:BPMNShape id="_EET-sINnEey__cZWJnWdkw" bpmnElement="_D8mNIINnEey__cZWJnWdkw" isHorizontal="true">
+        <dc:Bounds height="250.0" width="1290.0" x="30.0" y="250.0"/>
+      </di:BPMNShape>
+      <di:BPMNEdge id="_5ptoXoNmEey__cZWJnWdkw" bpmnElement="_5ptoKINmEey__cZWJnWdkw">
+        <di_1:waypoint x="122.0" y="100.0"/>
+        <di_1:waypoint x="164.0" y="100.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_kwnwE4RoEey__cZWJnWdkw" bpmnElement="_kwnwEIRoEey__cZWJnWdkw">
+        <di_1:waypoint x="310.0" y="90.0"/>
+        <di_1:waypoint x="420.0" y="90.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_lLXLU4RoEey__cZWJnWdkw" bpmnElement="_lLXLUIRoEey__cZWJnWdkw">
+        <di_1:waypoint x="520.0" y="89.0"/>
+        <di_1:waypoint x="610.0" y="89.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+      <di:BPMNEdge id="_nmH9loRoEey__cZWJnWdkw" bpmnElement="_nmH9k4RoEey__cZWJnWdkw">
+        <di_1:waypoint x="489.0" y="109.0"/>
+        <di_1:waypoint x="489.0" y="170.0"/>
+        <di:BPMNLabel/>
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+    <di:BPMNLabelStyle id="_0WX89IRoEey__cZWJnWdkw">
+      <dc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Segoe UI" size="9.0"/>
+    </di:BPMNLabelStyle>
+  </di:BPMNDiagram>
+</model:definitions>
